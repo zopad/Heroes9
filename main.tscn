@@ -10,7 +10,7 @@ texture = ExtResource("1_gosnu")
 centered = false
 
 [node name="Hero" parent="." instance=ExtResource("2_nma15")]
-position = Vector2(84, 80)
+position = Vector2(70, 75)
 
 [node name="GUI_Root" type="Control" parent="."]
 layout_mode = 3
