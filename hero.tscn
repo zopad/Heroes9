@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://bt1iuct0j1ad"]
+
+[ext_resource type="Script" path="res://hero_icon_move.cs" id="1_8bw7v"]
+[ext_resource type="Texture2D" uid="uid://bcihgky7e75i6" path="res://textures/Knight_on_battlefield.png" id="1_j2yrj"]
+
+[node name="Hero" type="Node2D"]
+script = ExtResource("1_8bw7v")
+
+[node name="HeroIconSprite" type="Sprite2D" parent="."]
+texture = ExtResource("1_j2yrj")
+centered = false

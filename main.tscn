@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://c0ab7wv0ubid0"]
+
+[ext_resource type="Texture2D" uid="uid://7l7pewejmkxh" path="res://textures/10440718-seamless-grass-texture-for-3d-or-2d-texturing.jpg" id="1_gosnu"]
+[ext_resource type="PackedScene" uid="uid://bt1iuct0j1ad" path="res://hero.tscn" id="2_nma15"]
+
+[node name="main" type="Node2D"]
+
+[node name="grass_texture" type="Sprite2D" parent="."]
+texture = ExtResource("1_gosnu")
+centered = false
+
+[node name="Hero" parent="." instance=ExtResource("2_nma15")]
+position = Vector2(84, 80)
+
+[node name="GUI_Root" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
