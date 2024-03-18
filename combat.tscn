@@ -1,0 +1,33 @@
+[gd_scene load_steps=6 format=3 uid="uid://cjei0tppu7tdc"]
+
+[ext_resource type="Texture2D" uid="uid://b78lmeka46u7q" path="res://textures/Creature_Hobgoblin_gif.jpg" id="1_eoc7f"]
+[ext_resource type="Texture2D" uid="uid://hipafe7ya0x1" path="res://textures/Creature_portrait_Hobgoblin_small_gif.jpg" id="2_dag8g"]
+[ext_resource type="Texture2D" uid="uid://bqy0ml4cqdx8b" path="res://textures/Hero_Aenain.png" id="3_dllfm"]
+[ext_resource type="Texture2D" uid="uid://dljb6451gkm1c" path="res://textures/Hero_Christian.png" id="4_phh5g"]
+[ext_resource type="Script" path="res://BackToMainButton.cs" id="5_bt2mh"]
+
+[node name="combat" type="Node2D"]
+
+[node name="CreatureHobgoblinGif" type="Sprite2D" parent="."]
+position = Vector2(51, 115)
+texture = ExtResource("1_eoc7f")
+
+[node name="CreaturePortraitHobgoblinSmallGif" type="Sprite2D" parent="."]
+position = Vector2(202, 113)
+texture = ExtResource("2_dag8g")
+
+[node name="HeroAenain" type="Sprite2D" parent="."]
+position = Vector2(59, 225)
+texture = ExtResource("3_dllfm")
+
+[node name="HeroChristian" type="Sprite2D" parent="."]
+position = Vector2(205, 223)
+texture = ExtResource("4_phh5g")
+
+[node name="BackToMainButton" type="Button" parent="."]
+offset_left = 471.0
+offset_top = 1.0
+offset_right = 553.0
+offset_bottom = 53.0
+text = "Go back"
+script = ExtResource("5_bt2mh")
