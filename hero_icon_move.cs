@@ -1,5 +1,7 @@
 using Godot;
 using System;
+using System.Security.Cryptography.X509Certificates;
+using System.Threading;
 
 public partial class hero_icon_move : Node
 {
@@ -26,10 +28,16 @@ public partial class hero_icon_move : Node
 			GD.Print("Mouse Click/Unclick at: ", eventMouseButton.Position);
 			Node2D iconNode = GetNode<Node2D>("HeroIconSprite");
 			// GlobalPos és Pos nem ugyanaz (sima Pos relatív)
+
 			iconNode.GlobalPosition = eventMouseButton.GlobalPosition;
+
+			/*new Thread(() =>
+			{ 
+				MoveHeroTo(iconNode, eventMouseButton.GlobalPosition); 
+			}).Start();*/
 		}
 
 		// Print the size of the viewport.
-		GD.Print("Viewport Resolution is: ", GetViewport().GetVisibleRect().Size);
+		// GD.Print("Viewport Resolution is: ", GetViewport().GetVisibleRect().Size);
 	}
 }
